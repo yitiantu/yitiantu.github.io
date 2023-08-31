@@ -170,7 +170,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2023-08-31 13:17:55 / 修改时间：13:18:44" itemprop="dateCreated datePublished" datetime="2023-08-31T13:17:55+08:00">2023-08-31</time>
+              <time title="创建时间：2023-08-31 13:17:55 / 修改时间：15:59:04" itemprop="dateCreated datePublished" datetime="2023-08-31T13:17:55+08:00">2023-08-31</time>
             </span>
 
           
@@ -187,7 +187,15 @@
           <blockquote>
 <p>本文由 <a target="_blank" rel="noopener" href="http://ksria.com/simpread/">简悦 SimpRead</a> 转码， 原文地址 <a target="_blank" rel="noopener" href="https://www.jianshu.com/p/2c9ab8c44775">www.jianshu.com</a></p>
 </blockquote>
-<h3 id="错误-1——【-git-push-u-origin-master-推送到远程时报错】"><a href="#错误-1——【-git-push-u-origin-master-推送到远程时报错】" class="headerlink" title="错误 1——【 git push -u origin master 推送到远程时报错】"></a>错误 1——【 git push -u origin master 推送到远程时报错】</h3><blockquote>
+<h3 id="错误-1——【-git-push-u-origin-master-推送到远程时报错】"><a href="#错误-1——【-git-push-u-origin-master-推送到远程时报错】" class="headerlink" title="错误 1——【 git push -u origin master 推送到远程时报错】"></a>错误 1——【 git push -u origin master 推送到远程时报错】</h3><p>缺少一步，就是本地master 要和remote master 挂靠</p>
+<p>大概：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git pull remote origin/master master</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<blockquote>
 <p>错误信息</p>
 </blockquote>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">To https://gitee.com/wokaixin/uniapp_practice.git</span><br><span class="line"> ! [rejected]        master -&gt; master (fetch first)</span><br><span class="line">error: failed to push some refs to &#x27;https://gitee.com/wokaixin/uniapp_practice.git&#x27;</span><br><span class="line">略………</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
