@@ -145,6 +145,228 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2023/09/01/2000%E7%AB%AF%E5%8F%A3%E6%B5%8B%E8%AF%95%E8%B4%9F%E8%BD%BD/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Du Heng">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="duheng's blog by hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2023/09/01/2000%E7%AB%AF%E5%8F%A3%E6%B5%8B%E8%AF%95%E8%B4%9F%E8%BD%BD/" class="post-title-link" itemprop="url">2000端口测试负载</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2023-09-01 20:36:09" itemprop="dateCreated datePublished" datetime="2023-09-01T20:36:09+08:00">2023-09-01</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2023/09/01/nginx-window%E4%BD%BF%E7%94%A8/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Du Heng">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="duheng's blog by hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2023/09/01/nginx-window%E4%BD%BF%E7%94%A8/" class="post-title-link" itemprop="url">nginx window使用</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2023-09-01 20:09:40" itemprop="dateCreated datePublished" datetime="2023-09-01T20:09:40+08:00">2023-09-01</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2023-09-02 10:47:45" itemprop="dateModified" datetime="2023-09-02T10:47:45+08:00">2023-09-02</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="nginx-进程查看"><a href="#nginx-进程查看" class="headerlink" title="nginx  进程查看"></a>nginx  进程查看</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">1.cmd查询windows命令</span><br><span class="line">tasklist /fi <span class="string">&quot;imagename eq nginx.exe&quot;</span></span><br><span class="line"></span><br><span class="line">2.<span class="built_in">kill</span> process by pid</span><br><span class="line">taskkill /f /pid *pid of nginx.exe*</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">3. wmic process <span class="built_in">where</span> processid=705164 </span><br><span class="line"></span><br><span class="line"><span class="comment">#指定字段</span></span><br><span class="line">3. wmic process <span class="built_in">where</span> processid=705164  get Executablepath</span><br><span class="line"></span><br><span class="line">C:\Documents and Settings\Administrator&gt;wmic</span><br><span class="line">wmic:root\cli&gt;process  -</span><br><span class="line">2、只查看指定程序路径及PID</span><br><span class="line">C:\Documents  and Settings\Administrator&gt;wmic process <span class="built_in">where</span> caption=<span class="string">&quot;alg.exe&quot;</span> get  ExecutablePath^,HandleExecutablePath                HandleC:\WINDOWS\System32\alg.exe  1892</span><br><span class="line">3、杀掉QQ进程</span><br><span class="line">taskkill /f /im qq.exe</span><br></pre></td></tr></table></figure>
+
+<p>nginx 常用命令</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 开启命令</span></span><br><span class="line">1.start nginx </span><br><span class="line"><span class="comment"># 关闭命令</span></span><br><span class="line">2.nginx  </span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="扩展：来自网页"><a href="#扩展：来自网页" class="headerlink" title="扩展：来自网页"></a>扩展：来自网页</h2><p>Windows杀掉进程<br>常规做法</p>
+<p>查看：任务管理器</p>
+<p>找到想杀掉的进程 -&gt; 选择进程 -&gt; 按右键，点击【结束任务】</p>
+<p>有些进程在【任务管理器】中是看不到的，如何杀掉呢？<br>执行：tasklist命令，会显示PID、会话名、内存使用等信息</p>
+<p>C:\Users\Administrator&gt;tasklist</p>
+<p>映像名称                       PID   会话名                  会话#       内存使用<br>&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D; &#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D; &#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D; &#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D; &#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;<br>System Idle Process              0 Services                   0          8 K<br>System                           4 Services                   0         96 K<br>Secure System                   72 Services                   0     39,764 K<br>Registry                       132 Services                   0     36,708 K<br>smss.exe                       740 Services                   0        948 K<br>csrss.exe                      824 Services                   0      4,252 K<br>wininit.exe                    912 Services                   0      3,684 K<br>csrss.exe                      928 Console                    1      5,660 K<br>services.exe                   984 Services                   0      9,092 K<br>LsaIso.exe                      96 Services                   0      2,912 K<br>chrome.exe                   25852 Console                    1     63,096 K<br>chrome.exe                   30152 Console                    1     38,784 K<br>chrome.exe                   31520 Console                    1     25,360 K<br>chrome.exe                   14756 Console                    1     77,028 K<br>java.exe                     31040 Console                    1    156,140 K<br>conhost.exe                  27536 Console                    1     11,100 K<br>SearchProtocolHost.exe       29976 Services                   0     11,780 K<br>Taskmgr.exe                   4488 Console                    1     67,972 K<br>dllhost.exe                  28080 Console                    1     12,296 K<br>SearchFilterHost.exe         24760 Services                   0      7,484 K<br>TrustedInstaller.exe         23124 Services                   0      7,644 K<br>svchost.exe                  15144 Services                   0      7,592 K<br>TiWorker.exe                  4540 Services                   0     29,900 K<br>git.exe                      27220 Console                    1      5,044 K<br>conhost.exe                  30724 Console                    1     11,104 K<br>git.exe                      13556 Console                    1      5,856 K<br>sh.exe                       23824 Console                    1      7,364 K<br>ssh.exe                      23692 Console                    1      9,024 K<br>tasklist.exe                 27324 Console                    1      8,588 K<br>WmiPrvSE.exe                  5024 Services                   0     10,284 K<br>杀掉：2种方法</p>
+<p>按指定【映像名称】杀掉，语法如下，-f是强制杀掉，不想强制杀掉，去掉：&#x2F;f即可</p>
+<p>taskkill &#x2F;im {映像名称} &#x2F;f<br>示例：注意，本命令会杀掉：映像名称一致的所有进程，慎用，建议按下面的指定PID方式杀掉进程。</p>
+<p>D:\dev\idea&gt;taskkill &#x2F;im Postman.exe &#x2F;f<br>成功: 已终止进程 “Postman.exe”，其 PID 为 19772。<br>成功: 已终止进程 “Postman.exe”，其 PID 为 22300。<br>成功: 已终止进程 “Postman.exe”，其 PID 为 21520。<br>成功: 已终止进程 “Postman.exe”，其 PID 为 15300。<br>成功: 已终止进程 “Postman.exe”，其 PID 为 18028。<br>成功: 已终止进程 “Postman.exe”，其 PID 为 23388。<br>成功: 已终止进程 “Postman.exe”，其 PID 为 9940。<br>按指定【PID】杀掉进程，语法</p>
+<p>taskkill &#x2F;pid {pid} &#x2F;F<br>示例</p>
+<p>D:\dev\idea&gt;taskkill &#x2F;pid 19172<br>错误: 无法终止 PID 为 19172 的进程。<br>原因: 只能强行终止这个进程(带 &#x2F;F 选项)。</p>
+<p>D:\dev\idea&gt;taskkill &#x2F;pid 19172 &#x2F;F<br>成功: 已终止 PID 为 19172 的进程。</p>
+<p>Java进程<br>参照我之前一篇文章，可以用JDK提供的命令：jps查看java进程</p>
+<p>延展知识<br>查找被占用的端口号，用netstat结合findstr命令查看</p>
+<p>netstat -aon | findstr 端口号<br>示例：最后一行是PID信息</p>
+<p>D:\dev\idea&gt;netstat -aon | findstr 3003<br>  TCP    0.0.0.0:3003           0.0.0.0:0              LISTENING       1476<br>  TCP    [::]:3003              [::]:0                 LISTENING       1476<br>  UDP    0.0.0.0:63003          <em>:</em>                                    4596<br>继续举例子：tasklist结合findstr可以查看：映像名称</p>
+<p>D:\dev\idea&gt;tasklist | findstr java<br>java.exe                     27060 Console                    1      6,712 K<br>java.exe                     10812 Console                    1     35,848 K</p>
+<p>java.exe                     31040 Console                    1     16,220 K</p>
+<p>nginx.config</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 主进程叫master，负责管理子进程，子进程叫worker</span></span><br><span class="line"><span class="comment"># worker_processes配置项表示开启几个业务进程，一般和cpu核数有关</span></span><br><span class="line">worker_processes  1;</span><br><span class="line"></span><br><span class="line">events &#123;</span><br><span class="line">    worker_connections  1024;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">http &#123;</span><br><span class="line">	<span class="comment"># include表示可以引入其他文件，此处表示引入http mime类型</span></span><br><span class="line">    include       mime.types;</span><br><span class="line">    default_type  application/octet-stream;</span><br><span class="line">    sendfile        on;</span><br><span class="line">    keepalive_timeout  65;</span><br><span class="line"></span><br><span class="line">	<span class="comment"># 虚拟主机，可以配置多个</span></span><br><span class="line">    server &#123;</span><br><span class="line">        listen       80;</span><br><span class="line">        server_name  localhost;</span><br><span class="line"></span><br><span class="line">        location / &#123;</span><br><span class="line">        	<span class="comment"># 路径匹配之后，哪个目录下去匹配相应的网页,html是相对路径</span></span><br><span class="line">            root   html;</span><br><span class="line">            index  index.html index.htm;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        error_page   500 502 503 504  /50x.html;</span><br><span class="line">        location = /50x.html &#123;</span><br><span class="line">            root   html;</span><br><span class="line">        &#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>proxy_redirect</p>
+<p><a target="_blank" rel="noopener" href="https://yitiantu.github.io/">https://yitiantu.github.io/</a></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2023/09/01/git%E5%A4%A7%E6%96%87%E4%BB%B6%E5%A4%84%E7%90%86/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Du Heng">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="duheng's blog by hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2023/09/01/git%E5%A4%A7%E6%96%87%E4%BB%B6%E5%A4%84%E7%90%86/" class="post-title-link" itemprop="url">未命名</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2023-09-01 01:10:21 / 修改时间：03:33:58" itemprop="dateCreated datePublished" datetime="2023-09-01T01:10:21+08:00">2023-09-01</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>1.查找pack包 前10文件大小</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">$ git rev-list --objects --all | grep <span class="string">&quot;<span class="subst">$(git verify-pack -v .git/objects/pack/*.idx | sort -k 3 -n | tail -10 | awk &#x27;&#123;print$1&#125;&#x27;)</span>&quot;</span></span><br><span class="line">0e79d161dd9b1de424089d9c6a061b3c6417a449 2工作/1业务技术/1医保/1分组/DRGs4.0分组发布包v2.3.6.0.zip</span><br><span class="line">f791f3501481f7608b62a099e8d0d9ec681e6160 2工作/1业务技术/1医保/3监管/动态监管接口服务/源代码/PayResultEtlApi230629/packages/Spire.PDF.9.1.0/Spire.PDF.9.1.0.nupkg</span><br><span class="line">5fc03831063a913d31709dae47ca5fa2e909ce14 2工作/2项目/省直支付/BI/分组结果/模拟1_1版分组结果20230324(内部) - 副本.xlsx</span><br><span class="line">939fed506d2dd100a94fd796e752a407da4688e2 2工作/2项目/省直支付/BI/分组结果/模拟1_1版分组结果20230324(内部).xlsx</span><br><span class="line">6d717436926c2527450536d372ffdb7a38566e62 2工作/2项目/省直支付/BI/分组结果/模拟1_1版分组结果20230324.xlsx</span><br><span class="line">0458d5a1b1fbc16026a15cbae89e2d7403088ed7 2工作/2项目/省直支付/BI/分组结果/模拟1_1版分组结果20230327(内部).xlsx</span><br><span class="line">41a119777ed9ff509dae98ab8d76a6a0e4b79bb9 2工作/1业务技术/1医保/3监管/动态监管接口服务/源代码/PayResultEtlApi.zip</span><br><span class="line">8991dfb9c77d7d12abb89be03fc92c983648f026 2工作/1业务技术/1医保/3监管/动态监管接口服务/源代码/PayResultEtlApi230629.zip</span><br><span class="line">d9765101726009261155c6b04b2297f55068344d 2工作/2项目/济南/稽核/20230728_济南稽核_发布包_7.6.57.2162all.zip</span><br><span class="line">8fb3185442535d5cb0c3a27e326dacc80852c4d9 2工作/2项目/济南/稽核/稽核.zip</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>2.删除</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 查看</span></span><br><span class="line">git rev-list --objects --all | grep 8fb3185442535d5cb0c3a27e326dacc80852c4d9</span><br><span class="line">2工作/2项目/济南/稽核/稽核.zip</span><br><span class="line"><span class="comment">#删除</span></span><br><span class="line">git filter-branch --force --prune-empty --index-filter <span class="string">&#x27;git rm -rf --cached --ignore-unmatch 2工作/2项目/济南/稽核/稽核.zip&#x27;</span> --tag-name-filter <span class="built_in">cat</span> -- --all</span><br><span class="line">git filter-branch --force --prune-empty --index-filter <span class="string">&#x27;git rm -rf --cached --ignore-unmatch 2工作/2项目/济南/稽核/20230728_济南稽核_发布包_7.6.57.2162all.zip&#x27;</span> --tag-name-filter <span class="built_in">cat</span> -- --all</span><br><span class="line"></span><br><span class="line">git filter-branch --force --index-filter <span class="string">&#x27;git rm -rf --cached --ignore-unmatch 稽核.zip&#x27;</span> --prune-empty --tag-name-filter <span class="built_in">cat</span> -- --all</span><br><span class="line"></span><br><span class="line"><span class="comment">#追杀</span></span><br><span class="line"><span class="built_in">rm</span> -rf .git/refs/original/</span><br><span class="line">git reflog expire --expire=now --all</span><br><span class="line">git gc --prune=now</span><br><span class="line">git gc --aggressive --prune=now</span><br><span class="line">git push origin master --force</span><br><span class="line"></span><br><span class="line">git remote prune origin</span><br><span class="line"></span><br><span class="line">.git主要记录每次提交变动，当我们的项目越来越大的时候，我们发现 .git文件越来越大</span><br><span class="line"></span><br><span class="line">很大的可能是因为提交了大文件，如果你提交了大文件，那么即使你在之后的版本中将其删除，但是，</span><br><span class="line">实际上，记录中的大文件仍然存在。</span><br><span class="line"></span><br><span class="line">虽然你在后面的版本中删除了大文件，但是Git是有版本倒退功能的吧，那么如果大文件不记录下来，</span><br><span class="line">git拿什么来给你回退呢？但是，.git文件越来越大导致的问题是： 每次拉项目都要耗费大量的时间，并且每个人都要花费</span><br><span class="line">那么多的时间。。</span><br><span class="line"></span><br><span class="line">git给出了解决方案，使用git branch-filter来遍历git <span class="built_in">history</span> tree, 可以永久删除<span class="built_in">history</span>中的大文件，达到让.git文件瘦身的目的。</span><br><span class="line"></span><br><span class="line">gitLab发生错误查看：Settings -&gt; Repository -&gt; Protected branch -&gt; unprotect</span><br></pre></td></tr></table></figure>
+
+<p>查看对象大小</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git count-objects -vH</span><br></pre></td></tr></table></figure>
+
+<p>gitlfs</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 1. 安装完成后，首先先初始化；如果有反馈，一般表示初始化成功</span></span><br><span class="line">git lfs install</span><br><span class="line">​</span><br><span class="line"><span class="comment"># 2. 如果刚刚下载的那个项目没啥更改，重新下一遍，不算麻烦事（因为下载大文件，一般会比较慢）</span></span><br><span class="line">git lfs <span class="built_in">clone</span> https://github.com/AABBBCC/aaa.git</span><br><span class="line"><span class="comment"># 在下载的过程中，你也可以查看一下，你刚刚无法解析的那个pkl大文件，是不是在这个项目中，(进入项目目录)使用如下指令：</span></span><br><span class="line"><span class="built_in">cd</span> aaa</span><br><span class="line">git lfs track</span><br><span class="line">​</span><br><span class="line"><span class="comment"># 3. 如果不想重新下载整个项目，可以使用如下命令，单独下载需要使用lfs下载的大文件。</span></span><br><span class="line">git lfs fetch</span><br><span class="line">git lfs checkout</span><br><span class="line"><span class="comment">#（备选：git lfs pull），不建议</span></span><br><span class="line"><span class="comment">######################</span></span><br><span class="line">git lfs track <span class="string">&quot;*.zip&quot;</span></span><br><span class="line">git lfs track <span class="string">&quot;*.xlsx&quot;</span></span><br><span class="line">git lfs track <span class="string">&quot;*.jpg&quot;</span></span><br><span class="line"></span><br><span class="line">git lfs migrate import --include-referenced HEAD</span><br><span class="line"></span><br><span class="line">先提交设置 跟踪那些文件？</span><br><span class="line"><span class="variable">$git</span> commit -m <span class="string">&quot;Add \&quot;*.bigfile\&quot; LFS config &quot;</span></span><br><span class="line">[master (root-commit) d052478] Add <span class="string">&quot;*.bigfile&quot;</span> LFS config</span><br><span class="line"> 1 file changed, 1 insertion(+)</span><br><span class="line"> create mode 100644 .gitattributes  （参数告诉机器这里面过滤走lfs）</span><br><span class="line"><span class="variable">$git</span> <span class="built_in">log</span> --oneline</span><br><span class="line">d052478 (HEAD -&gt; master) Add <span class="string">&quot;*.bigfile&quot;</span> LFS config</span><br><span class="line"></span><br><span class="line">切换成codeup仓库</span><br><span class="line">git remote -v  <span class="comment">#查看远端地址</span></span><br><span class="line">git remote <span class="comment">#查看远端仓库名</span></span><br><span class="line">git remote set-url origin git@codeup.aliyun.com:64efeee638d942876f456bdc/bigdata.git</span><br><span class="line"></span><br><span class="line"><span class="comment">#查看追踪的</span></span><br><span class="line">git lfs track</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><img src="https://s2.loli.net/2023/09/01/N3dZrVlniFpsTIw.webp" alt="img"></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://example.com/2023/08/31/git-push-%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93%E6%8A%A5%E9%94%99/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -494,12 +716,12 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-count">7</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-tags">
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">标签</span>
       </div>
   </nav>
